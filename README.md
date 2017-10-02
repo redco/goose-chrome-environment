@@ -1,0 +1,1 @@
+# goose-chrome-environment
