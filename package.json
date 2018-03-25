@@ -30,6 +30,7 @@
     "lodash.defaults": "^4.2.0",
     "lodash.sample": "^4.2.1",
     "mkdirp": "^0.5.1",
+    "proxy-chain": "^0.1.26",
     "puppeteer": "^1.1.1"
   },
   "devDependencies": {

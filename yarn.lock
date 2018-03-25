@@ -836,6 +836,14 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@^2.9.34:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
+
+bluebird@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -942,6 +950,10 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
 commander@^2.11.0, commander@^2.9.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
+
+commander@^2.8.1:
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1580,8 +1592,8 @@ globby@^5.0.0:
     pinkie-promise "^2.0.0"
 
 goose-abstract-environment@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/goose-abstract-environment/-/goose-abstract-environment-1.0.10.tgz#f77f63e3a60946940ba56eab5445c9ebbeee1be2"
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/goose-abstract-environment/-/goose-abstract-environment-1.0.11.tgz#e18470f6513281c51b65f027a0d10f722c713684"
   dependencies:
     babel-polyfill "^6.23.0"
     debug "^3.0.1"
@@ -2413,6 +2425,14 @@ pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
+portastic@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/portastic/-/portastic-1.0.1.tgz#1c9805d43fae8f6a40cf0dbc7794091a2e9d0d2a"
+  dependencies:
+    bluebird "^2.9.34"
+    commander "^2.8.1"
+    debug "^2.2.0"
+
 pre-commit@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/pre-commit/-/pre-commit-1.2.2.tgz#dbcee0ee9de7235e57f79c56d7ce94641a69eec6"
@@ -2444,6 +2464,14 @@ progress@^1.1.8:
 progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
+
+proxy-chain@^0.1.26:
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/proxy-chain/-/proxy-chain-0.1.26.tgz#3f3d04f89a2bbb2d93a9840a124eaa72d876a7b2"
+  dependencies:
+    bluebird "^3.5.1"
+    portastic "^1.0.1"
+    underscore "^1.8.3"
 
 proxy-from-env@^1.0.0:
   version "1.0.0"
@@ -2930,6 +2958,10 @@ uid-number@^0.0.6:
 ultron@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.0.tgz#b07a2e6a541a815fc6a34ccd4533baec307ca864"
+
+underscore@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 user-home@^1.1.1:
   version "1.1.1"
