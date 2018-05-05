@@ -1,4 +1,5 @@
 {
+  "private": true,
   "version": "1.0.5",
   "name": "goose-chrome-environment",
   "main": "lib/ChromeEnvironment.js",
