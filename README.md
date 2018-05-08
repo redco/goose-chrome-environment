@@ -1,6 +1,6 @@
 # Goose Chrome Environment
 
-Environment for [Goose Parser](https://github.com/redco/goose-parser) which allows to run it in Chromium via Puppeteer API
+Environment for [Goose Parser](https://github.com/redco/goose-parser) which allows to run it in Chromium via [Puppeteer API](https://github.com/GoogleChrome/puppeteer)
 
 ## ChromeEnvironment
 This environment is used for running Parser with chrome headless.
