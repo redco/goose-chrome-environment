@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.0.7",
+  "version": "1.0.9",
   "name": "goose-chrome-environment",
   "main": "lib/ChromeEnvironment.js",
   "repository": "redco/goose-chrome-environment",
