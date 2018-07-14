@@ -1,5 +1,9 @@
 # Goose Chrome Environment
 
+[![Build Status](https://img.shields.io/circleci/project/github/redco/goose-chrome-environment.svg?style=flat)](https://circleci.com/gh/redco/goose-chrome-environment)
+[![Latest Stable Version](https://img.shields.io/npm/v/goose-chrome-environment.svg?style=flat)](https://www.npmjs.com/package/goose-chrome-environment)
+[![Total Downloads](https://img.shields.io/npm/dt/goose-chrome-environment.svg?style=flat)](https://www.npmjs.com/package/goose-chrome-environment)
+
 Environment for [Goose Parser](https://github.com/redco/goose-parser) which allows to run it in Chromium via [Puppeteer API](https://github.com/GoogleChrome/puppeteer)
 
 ## ChromeEnvironment
