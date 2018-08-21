@@ -50,11 +50,11 @@ jobs:
         docker_layer_caching: true
     - run:
         name: Publish release notes when build from a tag
-          command: |
-            if [[ $CIRCLE_TAG ]]; then
-              yarn global add github-release-notes
-              yarn gren
-            fi
+        command: |
+          if [[ $CIRCLE_TAG ]]; then
+            yarn global add github-release-notes
+            yarn gren
+          fi
     - run:
         name: Release to npm
         command: |
