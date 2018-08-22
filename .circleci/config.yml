@@ -89,14 +89,18 @@ workflows:
     - checkout
     - build:
         requires:
-        - checkout
+          - checkout
     - test:
         requires:
-        - build
+          - build
     - publish:
         requires:
-        - test
+          - test
         filters:
           tags:
             only:
-            - /v.*/
+              - /v.*/
+          branches:
+            ignore:
+              - /.*/
+
