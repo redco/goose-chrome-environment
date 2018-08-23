@@ -87,12 +87,24 @@ workflows:
   build_and_test:
     jobs:
     - checkout
+        filters:
+          tags:
+            only:
+              - /v.*/
     - build:
         requires:
           - checkout
+        filters:
+          tags:
+            only:
+              - /v.*/
     - test:
         requires:
           - build
+        filters:
+          tags:
+            only:
+              - /v.*/
     - publish:
         requires:
           - test
