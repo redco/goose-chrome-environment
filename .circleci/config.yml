@@ -53,9 +53,8 @@ jobs:
         command: |
           if [[ $CIRCLE_TAG ]]; then
             yarn global add github-release-notes
-            yarn global bin
-            /usr/local/bin/gren release
-            /usr/local/bin/gren changelog
+            $(yarn global bin)/gren release
+            $(yarn global bin)/gren changelog
           fi
     - run:
         name: Release to npm
