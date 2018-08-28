@@ -61,6 +61,8 @@ jobs:
         command: |
           TAG_VERSION="$(echo $CIRCLE_TAG | cut -d 'v' -f 2)"
           cd ./build
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ./.npmrc
+          cat ./.npmrc
           yarn publish --new-version $TAG_VERSION
     - run:
         name: Waiting for npm version to be ready
