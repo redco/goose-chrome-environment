@@ -59,6 +59,12 @@ jobs:
     - run:
         name: Release to npm
         command: |
+          TAG_VERSION="$(echo $CIRCLE_TAG | cut -d 'v' -f 2)"
+          NPM_VERSION="$(npm show goose-chrome-environment version)"
+          echo "$TAG_VERSION == $NPM_VERSION"
+          if [ $TAG_VERSION == $NPM_VERSION ]; then
+            exit 0
+          fi
           cd ./build
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ./.npmrc
           npm publish
@@ -69,14 +75,13 @@ jobs:
           do
             TAG_VERSION="$(echo $CIRCLE_TAG | cut -d 'v' -f 2)"
             NPM_VERSION="$(npm show goose-chrome-environment version)"
-            echo "$TAG_VERSION == $NPM_VERSION"
             if [ $TAG_VERSION == $NPM_VERSION ]; then
               exit 0
             fi
             echo -n .
             sleep 1
           done
-            echo Failed waiting for npm version && exit 1
+            echo "Failed waiting for npm version $TAG_VERSION != $NPM_VERSION" && exit 1
     - run:
         name: Build and push docker image
         command: |
