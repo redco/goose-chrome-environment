@@ -65,9 +65,8 @@ jobs:
           if [ $TAG_VERSION == $NPM_VERSION ]; then
             exit 0
           fi
-          cd ./build
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ./.npmrc
-          npm publish
+          npm publish ./build
     - run:
         name: Waiting for npm version to be ready
         command: |
@@ -85,8 +84,8 @@ jobs:
     - run:
         name: Build and push docker image
         command: |
-          docker login -u $DOCKER_USER -p $DOCKER_PASS
-          ./publish.sh
+          echo $DOCKER_PASS | docker --username $DOCKER_USER --password-stdin
+          ./docker/publish.sh
 
 workflows:
   version: 2
