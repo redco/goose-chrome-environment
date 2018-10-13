@@ -70,6 +70,7 @@ jobs:
     - run:
         name: Waiting for npm version to be ready
         command: |
+          sleep 3
           for i in `seq 1 60`;
           do
             TAG_VERSION="$(echo $CIRCLE_TAG | cut -d 'v' -f 2)"
