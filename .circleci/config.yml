@@ -84,7 +84,7 @@ jobs:
     - run:
         name: Build and push docker image
         command: |
-          echo $DOCKER_PASS | docker --username $DOCKER_USER --password-stdin
+          echo $DOCKER_PASS | docker -u $DOCKER_USER --password-stdin
           ./docker/publish.sh
 
 workflows:
